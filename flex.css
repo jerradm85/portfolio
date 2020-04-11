@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+  }
+
+/* Mobile View */
+  body {
+    font-family: 'Verdana';
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  nav {
+    z-index: 1000;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: gray;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  footer {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: gray;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+
+  section {
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+ /* Targeted Element CSS  */
+
+  .name {
+    width: 50%;
+    padding-left: 25px;
+    text-align: left;
+  }
+
+  .navMobile {
+      position: fixed;
+      padding-right: 50px;
+      top: 20px;
+      right: 10px;
+      text-align: right;
+  }
+
+  nav > .navDesktop {
+    visibility: hidden;
+  }
+
+  .hero {
+      border: 3px slategray solid;
+  }
+
+  .about {
+    background-color: gray;
+    display: block;
+    position: relative;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    min-height: 300px;
+    width: 105%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about p {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+
+  .portfolio {
+    flex-direction: column;
+    border: 3px black solid;
+    justify-content: center;
+    margin-bottom: 70px;
+    background: gray;
+  }
+
+  .email {
+    width: 33.3%;
+    text-align: center;
+  }
+
+  .github {
+    width: 33.4%;
+    text-align: left;
+  }
+
+  .linkedIn {
+     width: 33.3%;
+     text-align: left;
+  }
+
+  /* Tablet View */
+  @media screen and (min-width: 650px) {
+
+    .name {
+      padding-left: 50px;
+      text-align: center;
+    }
+    
+    .github {
+      text-align: center;
+    }
+
+    .linkedIn {
+      width: 33.3%;
+      text-align: center;
+   }
+
+  }
+
+
+  /* Desktop View */
+  @media screen and (min-width: 950px) {
+
+    nav > .navMobile {
+      visibility: hidden;
+    }
+
+    nav > .navDesktop {
+      visibility: visible;
+      padding-right: 50px;
+      position: fixed;
+      right: 10px;
+      text-align: right;
+    }
+
+  }
